@@ -171,3 +171,53 @@ err := json.Unmarshal(data, &data)
 
 
 Получается, в Go десериализация JSON в структуру занимает примерно столько же времени, сколько у Дарта уходит на его десериализацию в unstructured Maps, даже если encoding/json использует для этого рефлекшены.
+
+Вот диаграмма размаха времени парсинга 9МБ файла Максимилиана (по 30 раз)
+
+![parse time diagram](http://mrale.ph/images/2017-01-08/plot-0.png)
+
+dartson отсутствует на этой картике потому что он, по крайней мере, в 10 раз медленнее, чем что-то еще...
+
+### Углубимся в производительность dartson'а
+
+Один из самых простых способов исследования производительности Дарта - использовать Observatory:
+
+```
+$ dart --observe decode-benchmark.dart --dartson
+Observatory listening on http://127.0.0.1:8181/
+loaded data.json: 9389696 bytes
+...
+```
+
+На странице профиля цпу мы найдем неутешительную картину:
+
+![cpu profile](http://mrale.ph/images/2017-01-08/profile-0.png)
+
+Увиденное говорит нам, что Дартсон тратит очень много времени на интерполяцию строк. Беглым взглядом на исходный код видно, что дарт делает много записей вроде этой:
+
+```
+void _fillObject(InstanceMirror objMirror, Map filler) {
+  // ...
+  _log.fine("Filled object completly: ${filler}");
+}
+```
+
+или этой
+
+```
+Object _convertValue(TypeMirror valueType, Object value, String key) {
+  // ...
+  _log.finer('Convert "${key}": $value to ${symbolName}');
+  // ...
+}
+```
+
+Это очевидная трата времени, поскольку интерполяция происходит даже если логирование выключено. Таким образом, в первую очередь, чтобы улучшить производительность десериализации, нужно совсем убрать все это логирование:
+
+$ dart decode-benchmark.dart --with-dartson
+loaded data.json: 9389696 bytes
+DSON.decode(...) took: <span style="color:orange"><b>1542ms</b></span>
+
+Вуаля! Мы только что сделали десериализацию с дартсоном на 42% быстрее, изменив кое-что, не затрагивающее другие зеркала и JSON. Если снова посмотреть в профиль, то там стоновится интереснее:
+
+![cpu profile without logging](http://mrale.ph/images/2017-01-08/profile-1.png)
