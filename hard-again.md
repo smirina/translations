@@ -107,20 +107,62 @@ One argument says that continual change in methodology is rigorous and healthy. 
 
 Говорят, что постоянное изменение методологии - это правильный и здоровый признак. Я согласен. Движение помогает нам быстрее справляться со сложностями. Было бы ужасно, если бы ничего не менялось. Но я согласен и с другим: терпение людей ограничено. Сколько таких кругов может пройти человек? Я сейчас на пятом, и, скажу я вам, крайне утомительно возвращаться к идеям из прошлого без малейшего предубеждения к ним.
 
-Methods that were once taboo are back on the table. For instance, last week I was reading a post about the benefits of not using stylesheets and instead having inline styles for everything. The post made a few compelling points, but this approach would have been crazy talk a few years ago.
-
 Методы, бывшие когда-то табу, снова перед нами. Например, на прошлой неделе я читал пост о плюсах использования инлайновых стилей вместо стайлшитов. Там были здравые аргументы, но сам посыл был сумашествием еще несколько лет назад.
-
-So much of how we build websites and software comes down to how we think. The churn of tools, methods, and abstractions also signify the replacement of ideology. A person must usually think in a way similar to the people who created the tools to successfully use them. It’s not as simple as putting down a screwdriver and picking up a wrench. A person needs to revise their whole frame of thinking; they must change their mind.
 
 Многое в том, как мы создаем сайты, сводится к тому, как мы думаем. Смещение инструментов, методов и абстракций также означает и смену идеологии. Чтобы успешно их использовать инструменты, нужно думать в том же направлении, как и те, кто их создал. Это не так же просто, как положить отвертку и взять гаечный ключ. Придется пересмотреть свои взгляды в целом и посмотреть на вещи с другой точки зрения.
 
-In one way, it is easier to be inexperienced: you don’t have to learn what is no longer relevant. Experience, on the other hand, creates two distinct struggles: the first is to identify and unlearn what is no longer necessary (that’s work, too). The second is to remain open-minded, patient, and willing to engage with what’s new, even if it resembles a new take on something you decided against a long time ago.
+С одной стороны, проще быть новичком: не нужно изучать то, что больше неактуально. Опыт, с другой стороны, создает дополнительные трудности: во-первых, нужно определить и забыть то, что больше не нужно (а это тоже работа). Во-вторых, оставаться открытым, терпеливым и интересоваться новым, даже если оно напоминает то, что вы уже давным давно проходили.
 
-С одной стороны, проще быть новичком: не нужно изучать то, что больше неактуально. Опыт, с другой стороны, создает две 
+https://frankchimero.com/writing/everything-easy-is-hard-again/images/seuss.gif
 
+![seuss](https://frankchimero.com/writing/everything-easy-is-hard-again/images/seuss.gif)
 
+That spirit of willingness was in me when I was investigating everything that had changed in the last 3 years. I started with the best of intentions, but the more I learned, the grumpier I got. It seemed that most of the new methods involved setting up elaborate systems to automate parts of the work. This is fine for particularly complicated and large projects, but setting up the system and maintaining it seemed to be more effort for an experienced person on a small project than doing the work without it.
 
+Это стремление было у меня, когда я решил наверстать упущенное за три года. Я начал с энтузиазмом, но чем дальше я продвигался,тем скептичнее я становился. Казалось, что большинство новых методов связаны с настройкой сложного окружения и автоматизацией работы с разными частями проектов. Это хорошо для достаточно сложных и объемных проектов. Но кажется, что опытному человеку гораздо проще сделать маленький проект без всего этого.
+
+Новые методы были придуманы, чтобы справляться с уровнем сложности, чуждым мне и моей работе. Было просто отбросить многие из них, когда я понял, что у меня есть альтернативы управления процессами. Вместо того, чтобы менять инструменты работы, я меняю дизайн(?). Это как строительство небольшого дома, который проще взять и построить, чем устанавливать краны, применяющиейся для строительства небоскребов.
+
+Уникалоность - это лучшее в моем опыте. Так что отличная фотография, запоминающаяся иллюстрация или идеально подобранное предложение - вот что важно. Кроме того, фантастическая реализация - это не то, что было решающим фактором для моих клиентов.
+fancy implementation has never moved the needle much for my clients.
+
+Моя философия дизайна - никакого балагана. Моя задача - помочь клиентам найти и представить одну или две уникальные вещи относительно их проекта или компании, а затем улучшить это представление с помощью запоминающегося, но не навязчивого дизайна. Если возникает сложность - мы обсуждаем ее, рассматриваем паттерны и меняем чертежи нашей стройки. У нас нет необходимости искать лучшие инструменты или улучшатели процессов. Раньше я называл это следованием сути веба - использовать в разработке решения, которые приближают к тому, чтобы HTML, CSS и экраны были простыми, гибкими и отзывчивыми. that swing with what HTML, CSS, and screens make easy, flexible, and resilient.
+
+Кажется, что с каждым годом этот подход используют все меньше и меньше известных сайтов. Поэтому я решил напомнить всем, что самая простая и дешевая стратегия работы со сложностями - не изобретать инструменты для работы с ними, а пересматривать план так, чтобы сложностей не было.
+
+Чтобы проверить, как много сложности ведут за собой мои скромные запросы, я написал список технических требований, на которые опираюсь при проектировании и разработке. Это не особенно длинный список:
+
+простая, отзывчивая раскладка
+веб-шрифты и приятно заданный текст
+эффектные масштабируемые изображения
+
+Все они были более чем удовлетворены примерно за пять лет, но за последние несколько лет даже эти базовые вещи стремятся к усложнению. but the complexity of even these very fundamental needs has ballooned in the last few years
+
+Например, я только что показал четыре разных способа разместить два элемента друг за другом. Каждый следующий способ по большей части заменяет предыдущий, так что надеюсь, флексбоксы и гриды принесли нам стабильность. Но кто знат, что будет через пять лет?
+
+![webfonts](https://frankchimero.com/writing/everything-easy-is-hard-again/images/webfonts.jpg)
+
+Веб-шрифты? Я думал, что достаточно нескольких строк с @font-face, но A Book Apart недавно опубликовали девяностостраничную электронную книгу о том, как загрузить шрифты. Я был немало удивлен: я то думал, что загрузить шрифты - это относительно простое действие, а оказывается нет!
+
+![imgix](https://frankchimero.com/writing/everything-easy-is-hard-again/images/imgix.jpg)
+
+Даже с картинками теперьв се сложно. Векторные изображения размещабтся в формате SVG, и, если копнуть глубже, начинают сводить с ума, потому что SVG это, по сути, еще одна веб-страница для встраивания в вашу веб страницу. А с растром отправка оптимизированного размера изображения для каждого конкретного устроства оказалась достачточно сложна для того, чтобы начали появляться платные сервисы, готовые сделать это за нас. Теперь разместить картинку так же сложно, как видео.
+
+My point is that the foundations are now sufficiently complicated enough on their own that it seems foolish to go add more optional complexity on top of it. I’ve kept my examples to the most basic of web implementations, and I haven’t touched on Javascript, animation, libraries, frameworks, pre-processors, package managers, automation, testing, or deployment. Whew.
+
+Я хочу сказать, что основы и так сейчас достаточно сложые сами по себе, и кажется глупым добалять сложность, которою можно избежать.  В качестве примера я привел самые простые вещи, даже не коснувшись скриптов, анимации, библиотек, фреймворков, препроцессоров, пакетных менеджеров, автоматизации, тестирования или деплоймента. Фух.
+
+Просто поставь вебпак из нпм через грант с вью Бабель или бовер чтобы реакт вллалчоатслкосдаьаиыовлкдсы
+
+Все это в связке - популярный способ разработки в 2018. Но тулчейны других людей совершенно непостижимы извне. Даже начинать страшно. В прошлом месяце мне пришлось установить пакетный менеджер чтобы установить пакетный менеджер! Тогда я закрыл свой ноутбук и меедленно отошел от него! СКолько же всего изменилось после CSS Zen Garden'а, с которого я начинал.
+
+Если будете говорить с разработчиком-сеньором, он скорее всего пожалуется на спагетти-код. Это когда кода слишком много, он неорганизованный, непрозрачный, с кучей зависимостей. Я обрадовался, когда первый раз услышал это определение, потому что, хотя я и не могу идентифицировать спагетти-код как дизайнер, я чертовски уверен, что знаю про спагетти-воркфлоу и спагетти-тулчейны. while I can’t identify spaghetti code as a designer, I sure as hell know about spaghetti workflows and spaghetti toolchains. Кажется, именно это сейчас и происходит с вебом.
+
+![notepad](https://frankchimero.com/writing/everything-easy-is-hard-again/images/notepad.gif)
+
+That breaks my heart, because so much of my start on the web came from being able to see and easily make sense of any site I’d visit. I had view source, but each year that goes by, it becomes less and less helpful as a way to investigate other people’s work. Markup balloons in size and becomes illegible because computers are generating it without an eye for context. Styles become overly verbose and redundant to the point of confusion. Functionality gets obfuscated behind compressed Javascript.
+
+This situation is annoying to me, because my thoughts turn to that young designer I mentioned at the start of my talk. How many opportunities did I have to reproduce what I saw by having legible examples in front of me? And how detrimental is it to have that kind of information obfuscated for her? Before, the websites could explain themselves; now, someone needs to walk you through it.
 
 
 
